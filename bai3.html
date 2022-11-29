@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script language ="javascript" type ="text/javascript">
+        var myDate = new Date();
+        var myYear= myDate.getFullYear();
+        var myMonth = myDate.getMonth();
+        var myDayNum = myDate.Date();
+        var myDayName = myDate.getDay();
+        alert("today is " + myDayName + " " + myDayNum + " " + myMonth + " " + myYear)
+    </script> -->
+
+           <script type="text/javascript" >
+                var current=new Date().getFullYear();
+                var birthday=prompt("Nhập vào ngày tháng năm sinh theo định dạng 'MM/dd/yyyy':" );
+                birthday=new Date(birthday).getFullYear();
+                alert("Tuổi của bạn là: "+(current-birthday));
+            </script>
+</body>
+</html>
