@@ -16,7 +16,7 @@
         var b = prompt("Nhập giá trị b: ");
         var s = a*b;
         alert(s);
-        document.write("tên của ban:" + s)
+        document.write("tên của ban:" + s)  // hiện thị trong 1 trang
         //document.getElementById("kq").innerHTML =s;
     </script>
 
@@ -49,9 +49,9 @@
                 }
             </script> -->
         
-            <p> A function is trigger when the user is proseeing a filed.</p>
-             Enter your number<input type = "text" id = "fnumber" onkeypress = "myFunction()">
-             Enter your number<input type = "text" id = "fusernumber" onkeypress = "myFunction()">
+            <!-- <p> A function is trigger when the user is proseeing a filed.</p>
+             Enter your number<input type = "text" id = "fnumber" onkeyup = "myFunction()">
+             Enter your number<input type = "text" id = "fusernumber" onkeyup = "myFunction()">
              <p>Tổng số là: <span id ="demo"></span></p>
 
             <script>
@@ -60,7 +60,120 @@
                         var y = parseInt(document.getElementById("fusernumber").value);
                         document.getElementById("demo").innerHTML = x+y;
                     }
-            </script>
-            
+            </script> -->
+
+        <!-- </script> 
+        <p> A function is trigger when the user is proseeing a filed.</p>
+         Enter name<input type = "text" id = "fname" onkeyup = "myFunction()">
+         <p>My name is: <span id ="demo"></span></p>
+        <script>
+           function myFunction(){
+                    var x = document.getElementById("fname").value;
+                    document.getElementById("demo").innerHTML = x;
+                }
+        </script>
+   
+</script>      
+<p> Hãy nhập 2 số sau đây để tính tổng:</p>
+ Nhập số a<input type = "number" id = "fnumber" onkeyup = "myFunction1()">
+ Nhập số b<input type = "number" id = "fusernumber" onkeyup = "myFunction1()">
+ <p>Kết quả là: <span id ="demo1"></span></p>
+
+<script>
+   function myFunction1(){
+            var x = parseInt(document.getElementById("fnumber").value);
+            var y = parseInt(document.getElementById("fusernumber").value);
+            document.getElementById("demo1").innerHTML = x+y;
+        }
+</script>  -->
+
+
+<!-- <p>click on the..........</p>
+<input type="number" name ="" id ="nhap">
+<button  onclick = "myFunction()"> Try it  </button>
+<p id ="demo2"></p>
+<script>
+function myFunction(){
+    var number = document.getElementById("nhap").value;
+    var greeting;
+    if (number ==0){
+        document.getElementById("demo2").innerHTML = "bạn được o điểm";
+        document.getElementById("demo2").style.color ="black";
+        // document.getElementById("demo2").style.background ="black";
+    }
+    else if( number>0){
+        document.getElementById("demo2").innerHTML = "đó là số dương";
+        document.getElementById("demo2").style.color ="red";
+    }
+    else{
+        document.getElementById("demo2").innerHTML = "đó là số âm";
+        document.getElementById("demo2").style.color ="blue";
+    }
+    // document.getElementById("demo2").innerHTML=greeting;
+}
+</script> -->
+
+<div class="contaner">
+    <h1>BẲNG ĐIỂM CỦA ĐI</h1>
+
+    <div id="input">
+        <span>Học kỳ 1</span>
+        <input type="text" name ="input" id ="text1" size="40px" >
+    </div>
+
+    <div id="input">
+        <span>Học kỳ 2</span>
+        <input type="text" name ="input" id ="text2" size="40px">
+    </div>
+<div id="input">
+    <div id="form">
+        <div class="row">
+            <div class="text">
+                <span>Year: </span>
+            </div>
+            <div class="number">
+                <select style = "width:50px; color: red" id = "select" >
+                    <option value = "1">1 </option>
+                    <option value = "2">2 </option>
+                    <option value = "3">3 </option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="input">
+        <div id="form">
+            <div class="row">
+                <div class="text">
+                    <span>Tổng:</span>
+                </div>
+                <div class="number">
+                    <input type="text" name ="result" id = "result" size="40" disabled = "true">  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div id="form-horizontal">
+        <div class="row">
+            <div class="col-sm-4">   
+            </div>
+            <div class="col-sm-2">
+                <input type="button" name ="ok" id = "ok" value = "ok" onclick="myFunction1">  
+            </div>
+            <div class="col-sm-2">
+                <input type="button" name ="cancell" id = "cancell" value = "cancell" onclick="myFunction2">  
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+
+
 </body>
 </html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- bài 1 -->
+
+    <!-- <script type="text/javascript" >
+        function tinhtuoi(){
+            var D = new Date();
+            var DateOfBirth= import("Nhập ngày sinh của bạn:" ,0);
+            var MonthOfBirth= import("Nhập tháng sinh của bạn:" ,0);
+            var YearOfBirth= import("Nhập năm sinh của bạn:" ,0);
+            var ngay_thu = D.getDate();
+            var Sotuoi = D.getFullYear() - YearOfBirth;
+            alert("Hiện tại bạn" + Sotuoi + "tuổi" + "tuổi và bạn sinh vào ngày thứ"+ ngay_thu);
+        }
+    </script> -->
+
+    <!-- bài 2 -->
+
+        <!-- <p> A function is trigger when the user is proseeing a filed.</p>
+        Enter your number<input type = "text" id = "fnumber" onkeyup = "myFunction()">
+        Enter your number<input type = "text" id = "fusernumber" onkeyup = "myFunction()">
+        <p>Tổng số là: <span id ="demo"></span></p>
+
+        <script>
+        function myFunction(){
+                var x = parseInt(document.getElementById("fnumber").value);
+                var y = parseInt(document.getElementById("fusernumber").value);
+                document.getElementById("demo").innerHTML = x+y;
+            }
+        </script> -->
+
+        <!-- bài 3 -->
+
+                <!-- <p>click on the..........</p>
+        <input type="number" name ="" id ="nhap">
+        <button  onclick = "myFunction()"> Try it  </button>
+        <p id ="demo2"></p>
+        <script>
+        function myFunction(){
+            var number = document.getElementById("nhap").value;
+            var greeting;
+            if (number ==0){
+                document.getElementById("demo2").innerHTML = "bạn được o điểm";
+                document.getElementById("demo2").style.color ="black";
+                // document.getElementById("demo2").style.background ="black";
+            }
+            else if( number>0){
+                document.getElementById("demo2").innerHTML = "đó là số dương";
+                document.getElementById("demo2").style.color ="red";
+            }
+            else{
+                document.getElementById("demo2").innerHTML = "đó là số âm";
+                document.getElementById("demo2").style.color ="blue";
+            }
+            // document.getElementById("demo2").innerHTML=greeting;
+        }
+        </script> -->
+
+        <script>
+            function grade(score,name){
+                var string_grade;
+                if(score >=0 && score <=100){
+                    if(score>90){
+                        string_grade ="Exelence"
+                    }
+                    else if(score >80){
+                        string_grade="very good"
+                    }
+                    else if (score >60){
+                        string_grade ="Fair"
+                    }
+                    else if(score >50){
+                        string_grade="Medium"
+                    }
+                    else{
+                        string_grade="Fail"
+                    }
+                }
+                else{
+                    string_grade="score must be between 0 to 100"
+                }
+                document.getElementById('str_grade').innerHTML= name+" grade is <b>" + string_grade + '</b>';
+            } 
+        </script>
+</body>
+        <form name ="frm_grade" action="#" method ="post">
+        <label>input student Name: </label>
+        <input type="text" name ="txt_name" value =""/>
+        <br/>
+        <label > input score: </label>
+        <input type="text" name="txt_score" value =""/>
+        <input type="button" name ="btn_grade" onclick="grade(txt_score.value,txt_name.value)" value ="define grade">
+        </form>
+        <div id="str_grade">&nbsp;</div>
+</html>

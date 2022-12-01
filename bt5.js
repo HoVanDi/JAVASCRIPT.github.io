@@ -41,7 +41,7 @@ function myFunction1(){
     }
 
     if (k>5 && k<7){
-        document.getElementById("display").innerHTML = "Học Sinh Trung Bing";
+        document.getElementById("display").innerHTML = "Học Sinh Trung Binh";
         document.getElementById("display").style.color = "blue";
     }
 
