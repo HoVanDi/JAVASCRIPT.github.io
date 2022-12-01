@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bt6.js">
     
 
     <!-- Bootstrap CSS -->
@@ -53,6 +54,18 @@
         </div>
     </div>
 </div>
+
+<div id="input">
+    <div id="form-horizontal">
+        <div id="row">
+                <div class="col-sm-10">
+                    <p id ="display">
+                </div>
+        </div>
+    </div>
+</div>
+
+
 
 
     <div id="form-horizontal">
@@ -104,23 +117,53 @@ switch (value) {
         result =((hk1 +(hk2*4))/5);
         document.getElementById("sum").value = result;
         break;}
-
-
 }
 
+if (result>9){
+        document.getElementById("display").innerHTML = "Học Sinh giỏi";
+        document.getElementById("display").style.color = "red";
+    }
+
+    if (result>7 &&  result<9){
+        document.getElementById("display").innerHTML = "Học Sinh khá";
+        document.getElementById("display").style.color = "yellow";
+    }
+
+    if (result>5 && result<7){
+        document.getElementById("display").innerHTML = "Học Sinh Trung Binh";
+        document.getElementById("display").style.color = "blue";
+    }
 }
+
+
+
 
 function myFunction2(){
     document.getElementById("s1").value ="";
     document.getElementById("s2").value ="";
     document.getElementById("sum").value ="";
-
-
-
 }
 
 
 </script>
+
+<style>
+    select#select {
+    margin-left: -121px;
+    }
+    input#sum {
+        margin-left: -121px;
+    }
+
+
+
+    div#input {
+        padding: 5px 0;
+    }
+
+</style>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -128,8 +171,5 @@ function myFunction2(){
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
-  
-
-  
 </html> 
 
